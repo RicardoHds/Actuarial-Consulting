@@ -1,0 +1,10 @@
+body{position:relative;}
+@media (max-width:1024px){.f-nav img{}
+}
+@media (max-width:425px){.navbar-brand img{max-width:140px !important;}
+}
+.body-top{margin-top:70px;}
+.f-nav{z-index:9999;position:fixed;left:0;top:0;width:100%;background-color:#ededed !important;}
+.f-nav .header-centred{padding:0 65px 0 65px;}
+.f-nav .nav-mainbar{padding-top:0px;}
+.f-nav img{max-width:140px !important;}
