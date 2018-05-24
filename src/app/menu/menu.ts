@@ -5,6 +5,5 @@ export class parentMenu {
       public url: string,
       public child: boolean,
       public titleChild: any[]
-    ) 
-    { }
+    ) { }
   }

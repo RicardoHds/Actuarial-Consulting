@@ -5,6 +5,5 @@ export class carousel {
       public description: string,
       public image: string,
       public url: string
-    ) 
-    { }
+    ) { }
   }
