@@ -6,8 +6,7 @@ import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-about',
   template: `
-        <div class="container padding-without">
-            <div class="col-md-9">
+        <div class="col-md-9">
             <div class="col-md-12 padding-without">
                 <div class="box-gray-light-img">
                     <blockquote class="blockquote-reverse margin-without">
@@ -52,9 +51,6 @@ import { Title } from '@angular/platform-browser';
                     </div>
                 </div>
                 </div>
-            </div>
-            <!-- Side area -->
-            <div class="col-md-3 text-center padding-sm20"><app-side-area></app-side-area></div>
         </div>`,
   providers: [ Globals ]
 })

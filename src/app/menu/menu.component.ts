@@ -22,7 +22,8 @@ import { parentMenu } from './menu';
                 <li class="dropdown" *ngFor="let page of parentMenu">
                     <a class="dropdown-toggle" aria-expanded="false" data-toggle="dropdown"
                         data-hover="dropdown" role="button" aria-haspopup="false"
-                        *ngIf="!page.child" then routerLink='{{ page.url }}'>{{ page.title }}
+                        *ngIf="!page.child" then routerLink='{{ page.url }}'>
+                        {{ page.title }}
                     <span class="glyphicon glyphicon-triangle-bottom font-10" *ngIf="page.child === true"></span>
                     </a>
                     <a class="dropdown-toggle" aria-expanded="false" data-toggle="dropdown"
@@ -31,7 +32,11 @@ import { parentMenu } from './menu';
                     <span class="glyphicon glyphicon-triangle-bottom font-10" *ngIf="page.child === true"></span>
                     </a>
                     <ul class="dropdown-menu" *ngIf="page.child === true" >
-                        <li *ngFor="let pageChild of page.titleChild"><a routerLink='{{ pageChild.url }}'>{{ pageChild.title }}</a></li>
+                        <li *ngFor="let pageChild of page.titleChild" routerLinkActive="active">
+                            <a routerLink='{{ pageChild.url }}'>
+                                {{ pageChild.title }}
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 </ul>

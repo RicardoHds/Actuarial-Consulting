@@ -11,7 +11,7 @@ import { Routes, RouterModule, Router, ActivatedRoute, NavigationEnd } from '@an
 export class AppComponent {
   title = 'app';
 
-  constructor(titleService: Title, router: Router, activatedRoute: ActivatedRoute) {
+  constructor(titleService: Title, public router: Router, activatedRoute: ActivatedRoute) {
     router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         const title = this.getTitle(router.routerState, router.routerState.root).join('-');
@@ -24,7 +24,7 @@ export class AppComponent {
   // collect that title data properties from all child routes
   // there might be a better way but this worked for me
   getTitle(state, parent) {
-    var data = [];
+    const data = [];
     if (parent && parent.snapshot.data && parent.snapshot.data.title) {
       data.push(parent.snapshot.data.title);
     }

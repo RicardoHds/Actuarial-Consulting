@@ -1,3 +1,11 @@
 <app-menu></app-menu>
-<router-outlet></router-outlet>
+<ng-container  *ngIf="router.url === '/'">
+    <router-outlet></router-outlet>
+</ng-container>
+<ng-container  *ngIf="router.url != '/'">
+    <div class="container padding-without">
+        <router-outlet></router-outlet>
+        <app-side-area></app-side-area>
+    </div>
+</ng-container>
 <app-footer></app-footer>

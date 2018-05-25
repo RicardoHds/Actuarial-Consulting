@@ -7,5 +7,6 @@ export class Globals {
     phone: string = '81 20 75 03 63';
     name: string = 'Ricardo Hernández';
     location: string = 'Saltillo, Coah., México';
-    nameTemplate: string = 'Rahs Consulting Firm';
+    nameTemplate: string = 'RAHS Consulting Firm';
+    logo: string = '../assets/images/rahs-logo.png';
 }
